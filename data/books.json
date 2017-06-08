@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Good Omens",
+        "author": "Terry Pratchett, Neil Gaiman",
+        "description": "According to The Nice and Accurate Prophecies of Agnes Nutter, Witch (the world's only completely accurate book of prophecies, written in 1655, before she exploded), the world will end on a Saturday. Next Saturday, in fact. Just before dinner. <br> So the armies of Good and Evil are amassing, Atlantis is rising, frogs are falling, tempers are flaring. Everything appears to be going according to Divine Plan. Except a somewhat fussy angel and a fast-living demon—both of whom have lived amongst Earth's mortals since The Beginning and have grown rather fond of the lifestyle—are not actually looking forward to the coming Rapture. <br> And someone seems to have misplaced the Antichrist . . .",
+        "date": "November 28th 2006",
+        "publisher": "HarperTorch"
+    },
+    {
+        "id": "2",
+        "title": "Jonathan Strange &amp; Mr Norrell",
+        "author": "Susannah Clarke",
+        "description": "At the dawn of the nineteenth century, two very different magicians emerge to change England's history. In the year 1806, with the Napoleonic Wars raging on land and sea, most people believe magic to be long dead in England--until the reclusive Mr Norrell reveals his powers, and becomes a celebrity overnight. <br> Soon, another practicing magician comes forth: the young, handsome, and daring Jonathan Strange. He becomes Norrell's student, and they join forces in the war against France. But Strange is increasingly drawn to the wildest, most perilous forms of magic, straining his partnership with Norrell, and putting at risk everything else he holds dear.",
+        "date": "August 1st 2006",
+        "publisher": "Tor Books"
+    },
+    {
+        "id": "3",
+        "title": "American Gods",
+        "author": "Neil Gaiman",
+        "description": "Locked behind bars for three years, Shadow did his time, quietly waiting for the magic day when he could return to Eagle Point, Indiana. A man no longer scared of what tomorrow might bring, all he wanted was to be with Laura, the wife he deeply loved, and start a new life. <br> But just days before his release, Laura and Shadow’s best friend are killed in an accident. With his life in pieces and nothing to keep him tethered, Shadow accepts a job from a beguiling stranger he meets on the way home, an enigmatic man who calls himself Mr. Wednesday. A trickster and rogue, Wednesday seems to know more about Shadow than Shadow does himself.<br>Life as Wednesday’s bodyguard, driver, and errand boy is far more interesting and dangerous than Shadow ever imagined—it is a job that takes him on a dark and strange road trip and introduces him to a host of eccentric characters whose fates are mysteriously intertwined with his own. Along the way Shadow will learn that the past never dies; that everyone, including his beloved Laura, harbors secrets; and that dreams, totems, legends, and myths are more real than we know. Ultimately, he will discover that beneath the placid surface of everyday life a storm is brewing—an epic war for the very soul of America—and that he is standing squarely in its path.",
+        "date": "July 2001",
+        "publisher": "Harper Collins", 
+    }
+]
