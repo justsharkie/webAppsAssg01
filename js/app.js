@@ -1,20 +1,37 @@
 angular
-    .module('myApp', ['ngRoute', 'ngAnimate'])
+    .module('myApp', ['ngRoute'])
+    .config(function($routeProvider){
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/placeholder.html',
+                controller: 'PlaceholderCtrl'
+            })
+            .when('/details/:itemId', {
+                templateUrl: 'views/card.html',
+                controller: 'DetailsCtrl'
+            })
+            .otherwise( {redirectTO: '/'} )
+    })
+    .controller('PlaceholderCtrl', function($scope){
+        $scope.itemId = [];
+        $scope.showAll = false
+    })
     .controller('DetailCtrl', function($scope, $routeParams, $http){
-        $scope.book = null;
+        $scope.itemId = $routeParams.itemId
         $http
             .get('/data/books.json')
-            .then(function(response){
-                let filteredArray = response.data.filter(row => {
+            .then(function(res){
+                $scope.book = res.data.filter(function(row){
                     return row.id === $scope.itemId
-                })
-            $scope.book = filteredArray[0]
+                })[0]
             })
     })
-    .controller('AllDetailCtrl', function($scope, $http){
+    .controller('AllDetailCtrl', function($scope, $routeParams, $http){
+        $scope.itemId = $routeParams.itemId
+        $scope.showAll = true
         $http
             .get('/data/books.json')
-            .then(function(response){
-                $scope.book = response.data
+            .then(function(res){
+                $scope.book = res.data
             })
     })

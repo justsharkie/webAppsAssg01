@@ -3,7 +3,10 @@
 <head>
 
     <style>
-		#body {
+        #link {
+            text-decoration:  none;
+        }
+        #body {
 			margin-bottom: 30px;
 			background-color: #e6e6e6;
 		}
@@ -25,9 +28,6 @@
 			margin-left:  25px;
             box-shadow: 5px 5px 15px #b3b3b3;
         }
-        .nav-link {
-            color: #000;
-        }
         .image {
             height: 350px;
             width: auto;
@@ -41,34 +41,25 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
 </head>
-<body id="body">
+<body id="body" ng-app="myApp">
 	<h1 class="h1 container-fluid text-center text-white" id="topbar">r/fantasy Top 10 Fantasy Standalones (2017)</h1>
     <section class="row">
         <ul class="list-group col-sm-3">
-            <li class="list-group-item list-group-item-action" ng-controller="AllDetailCtrl" ng-repeat="book in book">
-                <h5>{{book.title}}</h5>
-                <h6 class="text-muted">{{book.author}}</h6>
-            </li>
+            <a ng-href="/#!/details/{{book.id}}" id="link">
+                <li class="list-group-item list-group-item-action" ng-controller="DetailCtrl">
+                    <h5>{{book.title}}</h5>
+                    <h6 class="text-muted">{{book.author}}</h6>
+                </li>
+            </a>
         </ul>
-        <section class="card col-sm-6" ng-controller="DetailCtrl">
-            <div class="row">
-            <div class="col-sm-4">
-                <img ng-src="{{book.image}}" alt="">
-            </div>
-            <div class="card-block col-sm-8">
-                <h4 class="card-title">{{book.title}}</h4>
-                <p class="card-subtitle text-muted">{{book.author}}</p>
-                <p class="card-text">{{book.description}}</p>
-                <p class="card-text">{{book.date}}</p>
-                <p class="card-text">{{book.publisher}}</p>
-                <div class="row">
-                    <a href="#" class="btn btn-success col-sm-4 offset-3">Previous</a>
-                    <a href="#" class="btn btn-secondary col-sm-4 offset-1">Next</a>
-                </div>
-            </div>
-            </div>
-        </section>
+        <div ng-view></div>
     </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
 
