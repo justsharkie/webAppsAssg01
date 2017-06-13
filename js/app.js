@@ -6,7 +6,7 @@ angular
                 templateUrl: 'views/placeholder.html',
                 controller: 'PlaceholderCtrl'
             })
-            .when('/details/:itemId', {
+            .when('/details/{{book.id}}', {
                 templateUrl: '/views/card.html',
                 controller: 'DetailCtrl'
             })
