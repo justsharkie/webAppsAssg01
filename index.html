@@ -3,9 +3,6 @@
 <head>
 
     <style>
-        #link {
-            text-decoration:  none;
-        }
         #body {
 			margin-bottom: 30px;
 			background-color: #e6e6e6;
@@ -34,7 +31,6 @@
             margin-top: 20px;
         }
     </style>
-
 	<meta charset="UTF-8">
 	<title>Basic Web Page Navigation</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -44,11 +40,11 @@
 <body id="body" ng-app="myApp">
 	<h1 class="h1 container-fluid text-center text-white" id="topbar">r/fantasy Top 10 Fantasy Standalones (2017)</h1>
     <section class="row">
-        <ul class="list-group col-sm-3">
-            <a ng-href="/#!/details/{{book.id}}" id="link">
-                <li class="list-group-item list-group-item-action" ng-controller="DetailCtrl">
-                    <h5>{{book.title}}</h5>
-                    <h6 class="text-muted">{{book.author}}</h6>
+        <ul class="list-group col-sm-3" ng-controller="DetailCtrl">
+            <a ng-href="/#!/details/1">
+                <li class="list-group-item list-group-item-action">
+                    <h5>Good Omens</h5>
+                    <h6 class="text-muted">Terry Pratchett, Neil Gaiman</h6>
                 </li>
             </a>
         </ul>
@@ -62,6 +58,3 @@
 
 </body>
 </html>
-
-
-<!-- NOTE: images - ng-src"{{customer.vatarURL}}" -->

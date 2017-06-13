@@ -7,8 +7,8 @@ angular
                 controller: 'PlaceholderCtrl'
             })
             .when('/details/:itemId', {
-                templateUrl: 'views/card.html',
-                controller: 'DetailsCtrl'
+                templateUrl: '/views/card.html',
+                controller: 'DetailCtrl'
             })
             .otherwise( {redirectTO: '/'} )
     })
